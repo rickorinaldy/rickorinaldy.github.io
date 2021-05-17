@@ -8,6 +8,7 @@
 
 		<title> Ricko Rinaldy | Profile </title>
 		
+		<script src="MailtoComposeInGMail.user.js"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -20,7 +21,7 @@
 			<div id="profile" style="background-color:black;color:white;padding:2vw;text-align:center">
 				<h2>Ricko Rinaldy</h2>
 				<p>Data Enthusiast | Django Web Programmer</p>
-				<a style="text-decoration:none;color:white">
+				<a href="mailto:ricko.rinaldy.rr@gmail.com" style="text-decoration:none;color:white">
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
 					  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
 					</svg>
@@ -65,7 +66,8 @@
 						<h5><a href="covid19-xray.html">Chest X-Ray Covid19 Classification</a></h5>
 						<p>14 Juni 2020</p>
 						<p>Chest USG on hundred of patient to detect covid19 disease</p>
-					</div>				
+					</div>
+					
 					<div class="col">
 						<h5><a href="bank-data-marketing-classification.html">Bank Data Marketing Classification</a></h5>
 						<p>25 Jan 2020</p>
@@ -117,5 +119,10 @@
 		</div>
 		
 	</body>
+	<script>
+		var el = document.getElementsByTagName("a");
+		for (var i=0; i<el.length; i++){
+			el[i].target = "_blank";
+		}
+	</script>
 </html>
-
